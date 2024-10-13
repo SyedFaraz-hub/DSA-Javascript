@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursion</title>
+    <script>
+        // function recursion(number) {
+        //     console.log(number);
+        //     if (number < 10) {
+        //         recursion(number + 1) 
+        //     }
+        // }
+
+        // let number = 0
+        // recursion(number)
+
+
+
+        // factorial  4*3*2*1
+        function factorial(number) {
+            if (number === 0) {
+                return 1;
+            }
+            return number * factorial(number - 1)
+        }
+
+        // 5 * factorial(5 - 1) factorial(4 - 1) factorial(3 - 1) factorial(2 - 1) factorial(1 - 1)
+ 
+        let number = 5
+        console.log(factorial(number));
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

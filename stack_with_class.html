@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack With Class</title>
+    <script>
+        class Stack {
+            item = []
+            currentSize;
+            maxSize;
+
+            constructor(size) {
+                this.currentSize = this.item.length
+                this.maxSize = size
+            }
+
+            push(newValue) {
+                if (this.currentSize >= maxSize) {
+                    alert("Maximun limit reached")
+                }
+                else {
+                    this.item[this.currentSize] = newValue
+                    this.currentSize++
+                }
+            }
+            pop() {
+                if (this.currentSize > 0) {
+                    this.currentSize--
+                    this.item.length = this.currentSize
+                }
+                else {
+                    alert("stack is empty")
+                }
+            }
+            display() {
+                console.log(this.item);
+            }
+        }
+
+
+        const str = new Stack(5)
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

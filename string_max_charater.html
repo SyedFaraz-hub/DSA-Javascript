@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program to get Max occur Charater</title>
+    <script>
+
+        function getMaxOccurCharacter(str) {
+            let obj = {}
+            let maxCharater = ""
+            for (const ch of str) {
+                obj[ch] = (obj[ch] || 0) + 1
+                if (maxCharater === "" || obj[ch] > obj[maxCharater]) {
+                    maxCharater = ch
+                }
+            }
+
+            console.log(obj, maxCharater);
+
+        }
+
+        getMaxOccurCharacter("FARAZ")
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

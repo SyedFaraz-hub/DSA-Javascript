@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+    <script>
+        function checkPalindrome(str) {
+            let start = 0
+            let end = str.length - 1
+
+
+            while (end > start) {
+                if (str[start] != str[end]) {
+                    return false
+                }
+                start++
+                end--
+
+            }
+
+
+
+
+
+            return true
+        }
+
+
+
+        let str = "FARAZ"
+        console.log(checkPalindrome(str));
+
+
+
+        // function checkPalindrome(str) {
+        //     let reverseString = str.split("").reverse().join("")
+
+        //     if (reverseString != str) {
+        //         return false
+        //     }
+        //     return true
+        // }
+
+
+
+        // let str = "abba"
+        // console.log(checkPalindrome(str));
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Question</title>
+    <script>
+
+        // 1.Program to find the longest word in sentence
+        // function getLongestWord(str) {
+        //     let strArray = str.split(" ")
+        //     let longestWord = ""
+
+        //     for (const ch of strArray) {
+        //         if (ch.length > longestWord.length) {
+        //             longestWord = ch
+        //         }
+        //     }
+
+        //     return longestWord
+
+
+        // }
+
+        // console.log(getLongestWord("This is a program of javascript"));
+
+
+
+        // 2.Program to remove duplicates from array
+
+
+        // let array = [1, 2, 2, 3, 1, 3, 4, 4, 5, 5]
+
+        // // function removeDuplicate() {
+        // //     return array.filter((el, index) => array.indexOf(el) === index)
+        // // }
+
+
+        // console.log(removeDuplicate(array));
+
+
+
+        // 3. Merge given two sorted array and output will also be sorted.
+
+        // let data1 = [0, 3, 4, 31]
+        // let data2 = [4, 6, 30]
+        // let data3 = []
+
+
+        // let d1 = 0
+        // let d2 = 0
+        // let d3 = 0
+
+
+        // while (d1 < data1.length && d2 < data2.length) {
+        //     if (data1[d1] < data2[d2]) {
+        //         data3[d3] = data1[d1]
+        //         d1++
+        //     }
+        //     else {
+        //         data3[d3] = data2[d2]
+        //         d2++
+        //     }
+
+        //     d3++
+        // }
+
+
+        // while (d1 < data1.length) {
+        //     data3[d3] = data1[d1]
+        //     d1++
+        // }
+
+        // while (d2 < data2.length) {
+        //     data3[d3] = data2[d2]
+        //     d2++
+        // }
+
+
+
+        // console.log(data3);
+
+
+
+        // 4. function which return true if 2nd array have square of every value of first array coresponding.
+
+
+
+        // let data1 = [2, 4, 5, 8]
+        // let data2 = [4, 16, 25, 64]
+
+        // // true
+
+
+        // function checkSquare() {
+        //     for (let i = 0; i < data1.length; i++) {
+        //         if (data2[i] != (data1[i] * data1[i])) {
+        //             return false
+        //         }
+        //     }
+
+        //     return true
+        // }
+
+        // console.log(checkSquare());
+
+
+
+        //5. ANAGRAM
+
+
+        // function checkanagram(str1, str2) {
+        //     if (str1.length != str2.length) {
+        //         return false
+        //     }
+        //     //    FARAZ
+        //     let obj = {}
+
+
+        //     for (const ch of str1) {
+        //         obj[ch] = (obj[ch] || 0) + 1
+        //     }
+
+        //     for (const ch of str2) {
+        //         if (!obj[ch]) {
+        //             return false
+        //         }
+        //         obj[ch]--
+        //     }
+
+        //     return true
+
+        // }
+
+
+        // console.log(checkanagram("FARAZ", "faraz"));
+
+
+
+
+        // 6. get unique object from array
+
+        // let array = [ {name: "sai"}, {name: "naang"}, {name: "sai"}, {name: "naang"},  {name: "1111111111111"}]
+
+        // let container = new Set()
+        // const uniqueArray = array.filter((el)=> {
+        //     if (!container.has(el.name)) {
+        //         container.add(el.name)
+        //         return true
+        //     }
+        //         return false
+
+        // })
+
+
+        // console.log(uniqueArray, container);
+
+
+
+        // 7.Write a program to find the max number in array
+
+        // let array = [23, 52, 46, 25, 100]   //100
+
+        // let max = 0
+
+        // for (const ch of array) {
+        //    if (ch > max) {
+        //         max = ch
+        //    }
+        // }
+
+
+        // console.log(max);
+
+
+
+
+        // 7.Write a program to get even values from array
+
+        // function EvenNumbers(array) {
+
+        //     return array.filter((el) => el % 2 === 0)
+
+        // }
+
+
+        // let data = [4, 3, 8, 1, 5, 10] // [4,8,10]
+        // console.log(EvenNumbers(data));
+
+
+
+        // 8. program to find a larget element in nested array 
+
+        // let data = [[3, 8, 5], [709, 8, 9, [10, 11], 2, 34]]
+
+
+
+
+        // function flat(data) {
+        //     let ar = []
+        //     let max = 0
+        //     if (Array.isArray(data)) {
+        //         data.forEach((e) => {
+        //             ar.push(...flat(e))
+        //         })
+
+        //     }
+
+        //     else {
+        //         ar.push(data)
+        //     }
+
+        //     return ar
+        // }
+
+
+        // console.log(flat(data))
+
+
+
+
+        // let data = [[3, 8, 5], [709, 8, 9, [10, 11], 2, 34]]
+
+
+
+        // function GetLargestValue(data) {
+
+
+        //     function flat(data) {
+        //         let ar = []
+
+        //         if (Array.isArray(data)) {
+        //             data.forEach((el) => {
+        //                 ar.push(...flat(el))
+        //             })
+        //         }
+        //         else {
+        //             ar.push(data)
+        //         }
+
+
+        //         return ar
+        //     }
+
+        //     let flatArray = flat(data)
+
+
+        //     let max = 0
+
+        //     for (const ch of flatArray) {
+        //         if (max < ch) {
+        //             max = ch
+        //         }
+        //     }
+
+        //     return max
+
+        // }
+
+
+        // console.log(GetLargestValue(data));
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

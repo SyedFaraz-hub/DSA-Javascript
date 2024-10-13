@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <script>
+        // // INSERT ELEMENT 
+        // let data = [23, 54, 64, 12] // [23, 54, 40, 64, 12]
+        // let position = 3
+        // let value = 100
+
+        // for (i = data.length - 1; i >= position; i--) {
+        //     data[i + 1] = data[i]
+        //     if (data[i] = position) {
+        //         data[i] = value
+        //     }
+        // }
+
+        // console.log(data);
+
+
+        //DELETE ELEMENT
+        // let data = [1, 2, 3, 4, 5, 6] // [1,2,4]
+        // let position = 2
+
+
+        // for (i = position; i < data.length; i++) {
+        //    data[i] = data[i + 1]
+        //    data.length = data.length - 1
+        // }
+
+        // console.log(data);
+
+
+        // //MERGING ARRAY
+        // let item1 = [1, 2, 3, 4, 5]
+        // let item2 = [6, 7, 8, 9, 10]
+        // let item3 = []
+
+        // for (i = 0; i < item1.length; i++) {
+        //     item3[i] = item1[i]
+        // }
+        // for (i = 0; i < item2.length; i++) {
+        //     item3[i + item1.length] = item2[i]
+        // }
+
+        // console.log(item3);
+
+
+        // //MERGING ARRAY WITH WHILE
+        // let item1 = [1, 2, 3, 4]
+        // let item2 = [5, 6, 7, 8]
+        // let item3 = []
+        // let l1 = 0
+        // let l2 = 0
+        // let l3 = 0
+
+
+        // while (l1 < item1.length && l2 < item2.length) {
+        //     if (item1[l1] < item2[l2]) {
+        //         item3[l3] = item1[l1]
+        //         l1++
+        //     }
+        //     else {
+        //         item3[l3] = item2[l2]
+        //         l2++
+        //     }
+        //     l3++
+        // }
+
+        // while (l1 < item1.length) {
+        //     item3[l3] = item1[l1];
+        //     l1++;
+        //     l3++;
+        // }
+
+        // while (l2 < item2.length) {
+        //     item3[l3] = item2[l2];
+        //     l2++;
+        //     l3++;
+        // }
+
+        // console.log(item3);
+
+
+
+
+        //BUUBLE SORT 2 Time loops
+        // let data = [13, 23, 42, 12]
+
+        // for (i = 0; i < data.length; i++) {
+        //     for (j = 0; j < data.length; j++) {
+        //         if (data[j] > data[j + 1]) {
+        //             temp = data[j + 1]
+        //             data[j + 1] = data[j]
+        //             data[j] = temp
+
+        //         }
+        //     }
+        // }
+
+        // console.log(data);
+
+
+        //FACTORAIL
+        // function factorial(number) {
+        //     if (number === 0) {
+        //         return 1
+        //     }
+        //     return number * factorial(number - 1)
+        // }
+
+
+
+        // let number = 5
+        // console.log(factorial(number));
+
+
+
+
+        //REVERSE AN ARRAY
+        // let data = [1, 2, 3, 4, 5]
+        // let start = 0;
+        // let end = data.length - 1
+
+
+        // function Reverse(start, end) {
+        //     if (start <= end) {
+        //         temp = data[end]
+        //         data[end] = data[start]
+        //         data[start] = temp
+        //         Reverse(data, start + 1, end - 1)
+        //     }
+
+        // }
+
+        // Reverse(start, end)
+
+
+        // console.log(data);
+
+
+        //Binary Search LOOP
+
+        // let data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        // let value = 6
+        // let start = 0
+        // let end = data.length - 1
+        // let position;
+
+
+        // while (start <= end) {
+        //     let mid = Math.floor((start + end) / 2)
+        //     if (data[mid] === value) {
+        //         position = mid
+        //         break;
+        //     }
+        //     else if (data[mid] < value) {
+        //         start = mid + 1
+        //     }
+        //     else {
+        //         end = mid - 1
+        //     }
+        // }
+
+
+        // console.log(position);
+
+
+
+        // Binary Search recursion
+
+        // let data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        // let value = 6
+        // let start = 0
+        // let end = data.length - 1
+        // let position;
+
+
+        // function Binary(start, end) {
+        //     let mid = Math.floor((start + end) / 2)
+        //     if (data[mid] === value) {
+        //         position = mid
+        //         return true
+        //     }
+        //     else if (data[mid] < value) {
+        //         Binary(mid + 1, end)
+        //     }
+        //     else {
+        //         Binary(start, mid - 1)
+        //     }
+
+        // }
+
+        // Binary(start, end)
+        // console.log({position});
+
+        //Binary search recursion
+
+        // let data = [1, 2, 3, 4, 5]
+        // let value = 3
+        // let start = 0
+        // let end = data.length - 1
+        // let position = undefined;
+
+
+        // function recursionBinary(data, start, end) {
+        //     let mid = Math.floor((start + end) / 2)
+        //     if (data[mid] === value) {
+        //         position = mid
+        //         return true
+        //     }
+        //     else if (data[mid] < value) {
+        //         start = mid + 1
+        //     }
+        //     else {
+        //         end = mid - 1
+        //     }
+
+        // }
+
+        // recursionBinary(data, start, end)
+
+        // console.log(position);
+
+
+        // Selection Sort 
+
+        // let data = [23, 54, 12, 86, 3]
+
+
+        // for (i = 0; i < data.length; i++) {
+        //     let minId = i
+        //     for (j = i + 1; j < data.length; j++) {
+        //         if (data[minId] > data[j]) {
+        //             minId = j
+        //         }
+        //     }
+
+        //     let temp = data[minId]
+        //     data[minId] = data[i]
+        //     data[i] = temp
+        // }
+
+        // console.log(data);
+
+
+        // check anagram 
+
+        // function checkAnagram (str1, str2) {
+        //     if (str1.length != str2.length) {
+        //         return false
+        //     }
+
+        //     let obj = {}
+
+        //     for (const ch of str1) {
+        //         obj[ch] = (obj[ch] || 0) + 1
+        //     }
+
+        //     console.log(obj);
+
+        //     for (const ch of str2) {
+        //         if (!obj[ch]) {
+        //             return false
+        //         }
+        //         obj[ch]--
+        //     }
+
+        //     return true
+        // }
+
+        // console.log(checkAnagram("FARAZ", "ZAAAF"));
+
+
+
+        //PALINDROME
+
+        // function checkPalindrome(str1) {
+        //     let start = 0
+        //     let end = str1.length - 1
+
+        //     while (end > start) {
+        //         if (str1[start] != str1[end]) {
+        //             return false
+        //         }
+        //         start++
+        //         end--
+        //     }
+
+        //     return true
+        // }
+
+        // console.log(checkPalindrome("LEVEL"));
+
+
+
+        //Linked List 
+        class List {
+            head = {}
+            tail = {}
+            size = 1
+
+            constructor(data) {
+                this.head = {
+                    value: data,
+                    next: null
+                }
+
+                this.tail = this.head
+            }
+            appendNode(data) {
+                let newNode = {
+                    value: data,
+                    next: null
+                }
+
+                this.tail.next = newNode
+                this.tail = newNode
+                this.size++
+            }
+            traversing() {
+                let counter = 1
+                let newNode = this.head
+                while (counter <= this.size) {
+
+                    console.log(newNode.value);
+                    newNode = newNode.next
+                    counter++
+
+                }
+            }
+            deleteNode(index) {
+                let counter = 1;
+                let lead = this.head
+
+
+                if (index === 1) {
+                    this.head = this.head.next
+                }
+                else {
+                    while (counter < index - 1) {
+                        lead = lead.next
+                        counter++
+                    }
+
+                    let nextNode = lead.next.next
+
+                    lead.next = nextNode
+                }
+            }
+            insertNode(index, value) {
+                let counter = 1;
+                let lead = this.head
+
+                if (index === 1) {
+                    let newNode = {
+                        value,
+                        next: lead
+
+                    }
+
+                    this.head = newNode
+                    this.size++
+                }
+                else if (index == this.size) {
+                    this.appendNode(value);
+                }
+                else {
+                    while (counter < index - 1) {
+                        lead = lead.next
+                        counter++
+                    }
+
+                    let newNode = {
+                        value,
+                        next: lead.next.next
+                    }
+
+                    lead.next = newNode
+                    this.size++
+
+                }
+            }
+            search(value) {
+                let result;
+                let lead = this.head
+                let loop = true
+
+                if (lead.value === value) {
+                    return result = lead
+                } else {
+                    while (loop) {
+                        lead = lead.next
+
+                        loop = !!lead
+
+                        if (loop && lead.value === value) {
+                            loop = false
+                            return result = lead
+                        }
+                    }
+                }
+          }
+
+        }
+
+        let list = new List(100)
+        list.appendNode(200)
+        list.appendNode(300)
+        // list.traversing()
+        // list.deleteNode(2)
+        // list.insertNode(3, 50)
+        console.log(list.search(100));
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

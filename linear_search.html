@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Search</title>
+    <script>
+        let data = [20, 40, 50, 23, 54]
+        let value = 54
+        let pos = undefined;
+
+        for (i = 0; i < data.length; i++) {
+            if (data[i] === value) {
+                pos = i
+                break;
+            }
+        }
+        if (pos) {
+            alert(`the index of ${value} is ${pos}`)
+        }
+        else {
+            alert("Value not found")
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array - Traversing</title>
+    <script>
+        let data = [23, 14, 42, 26, 1, 67, 28, 36, 96]
+        // for (let i = 0; i < data.length; i++) {
+        //   document.write(`Point ${i} is ${data[i]} <br/>`)
+        // }
+
+
+        function getNumber() {
+            const input = document.getElementById('input')
+
+            if (input.value < data.length) {
+                alert(data[input.value])
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <input type="text" id="input" placeholder="Enter a number" />
+    <button onclick="getNumber()">Submit</button>
+</body>
+
+</html>
